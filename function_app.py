@@ -4,7 +4,7 @@ import json
 import logging
 import os
 from azure.data.tables import TableServiceClient, TableClient, UpdateMode
-
+# testing ci/cd comment
 app = func.FunctionApp()
 
 @app.route(route="counterfunction", auth_level=func.AuthLevel.ANONYMOUS)
