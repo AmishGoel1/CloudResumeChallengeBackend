@@ -10,7 +10,7 @@ app = func.FunctionApp()
 @app.route(route="counterfunction", auth_level=func.AuthLevel.ANONYMOUS)
 def counterfunction(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
-    connection_string = os.environ["ConnectionString"]
+    connection_string = os.environ["tableconnect"]
     my_filter = "PartitionKey eq 'counter' and RowKey eq 'counter'"
     table_client = TableClient.from_connection_string(conn_str=connection_string, table_name="countertable")
     entity = table_client.get_entity(row_key="counter", partition_key="counter")
