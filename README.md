@@ -10,7 +10,7 @@ This project sets up a backend API using Azure Functions and connects it to an A
 - Chose default settings suitable for backend APIs and low-memory usage.
 
 ---
-
+cd 
 ## ⚡ Azure Function App Deployment
 
 - **Created a Function App** through the Azure portal (GUI).
